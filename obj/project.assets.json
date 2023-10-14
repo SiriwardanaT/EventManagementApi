@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Aux-126\\.nuget\\packages\\": {}
+    "C:\\Users\\JANINDU MALEESHA\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aux-126\\source\\repos\\SalesManagementApp\\SalesManagementAPI.csproj",
+      "projectUniqueName": "C:\\Users\\JANINDU MALEESHA\\Desktop\\Event\\EventManagementApi\\SalesManagementAPI.csproj",
       "projectName": "SalesManagementAPI",
-      "projectPath": "C:\\Users\\Aux-126\\source\\repos\\SalesManagementApp\\SalesManagementAPI.csproj",
-      "packagesPath": "C:\\Users\\Aux-126\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aux-126\\source\\repos\\SalesManagementApp\\obj\\",
+      "projectPath": "C:\\Users\\JANINDU MALEESHA\\Desktop\\Event\\EventManagementApi\\SalesManagementAPI.csproj",
+      "packagesPath": "C:\\Users\\JANINDU MALEESHA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JANINDU MALEESHA\\Desktop\\Event\\EventManagementApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Aux-126\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JANINDU MALEESHA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.426\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
       }
     }
   }

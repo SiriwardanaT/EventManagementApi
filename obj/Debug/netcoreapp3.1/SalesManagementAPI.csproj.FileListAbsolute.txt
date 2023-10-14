@@ -18,3 +18,24 @@ C:\Users\Aux-126\source\repos\SalesManagementApp\obj\Debug\netcoreapp3.1\staticw
 C:\Users\Aux-126\source\repos\SalesManagementApp\obj\Debug\netcoreapp3.1\SalesManagementAPI.dll
 C:\Users\Aux-126\source\repos\SalesManagementApp\obj\Debug\netcoreapp3.1\SalesManagementAPI.pdb
 C:\Users\Aux-126\source\repos\SalesManagementApp\obj\Debug\netcoreapp3.1\SalesManagementAPI.genruntimeconfig.cache
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\bin\Debug\netcoreapp3.1\SalesManagementAPI.exe
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\bin\Debug\netcoreapp3.1\SalesManagementAPI.deps.json
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\bin\Debug\netcoreapp3.1\SalesManagementAPI.runtimeconfig.json
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\bin\Debug\netcoreapp3.1\SalesManagementAPI.runtimeconfig.dev.json
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\bin\Debug\netcoreapp3.1\SalesManagementAPI.dll
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\bin\Debug\netcoreapp3.1\SalesManagementAPI.pdb
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\obj\Debug\netcoreapp3.1\SalesManagementAPI.csproj.AssemblyReference.cache
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\obj\Debug\netcoreapp3.1\SalesManagementAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\obj\Debug\netcoreapp3.1\SalesManagementAPI.AssemblyInfoInputs.cache
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\obj\Debug\netcoreapp3.1\SalesManagementAPI.AssemblyInfo.cs
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\obj\Debug\netcoreapp3.1\SalesManagementAPI.csproj.CoreCompileInputs.cache
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\obj\Debug\netcoreapp3.1\SalesManagementAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\obj\Debug\netcoreapp3.1\staticwebassets\SalesManagementAPI.StaticWebAssets.Manifest.cache
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\obj\Debug\netcoreapp3.1\staticwebassets\SalesManagementAPI.StaticWebAssets.xml
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\obj\Debug\netcoreapp3.1\scopedcss\bundle\SalesManagementAPI.styles.css
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\obj\Debug\netcoreapp3.1\SalesManagementAPI.RazorTargetAssemblyInfo.cache
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\obj\Debug\netcoreapp3.1\SalesManagementAPI.dll
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\obj\Debug\netcoreapp3.1\SalesManagementAPI.pdb
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\obj\Debug\netcoreapp3.1\SalesManagementAPI.genruntimeconfig.cache
