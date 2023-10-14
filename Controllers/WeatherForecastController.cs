@@ -23,6 +23,8 @@ namespace SalesManagementApp.Controllers
             _logger = logger;
         }
 
+        //hi thara
+
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
