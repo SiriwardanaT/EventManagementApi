@@ -24,6 +24,7 @@ namespace SalesManagementApp.Controllers
         }
 
         //hi thara
+        //hi jani
 
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
