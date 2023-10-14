@@ -26,7 +26,6 @@ C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\bin\Debug\netcoreapp3
 C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\bin\Debug\netcoreapp3.1\SalesManagementAPI.runtimeconfig.dev.json
 C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\bin\Debug\netcoreapp3.1\SalesManagementAPI.dll
 C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\bin\Debug\netcoreapp3.1\SalesManagementAPI.pdb
-C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\obj\Debug\netcoreapp3.1\SalesManagementAPI.csproj.AssemblyReference.cache
 C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\obj\Debug\netcoreapp3.1\SalesManagementAPI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\obj\Debug\netcoreapp3.1\SalesManagementAPI.AssemblyInfoInputs.cache
 C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\obj\Debug\netcoreapp3.1\SalesManagementAPI.AssemblyInfo.cs
@@ -71,3 +70,4 @@ C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\bin\Debug\netcoreapp3
 C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\obj\Debug\netcoreapp3.1\SalesManagementAPI.csproj.CopyComplete
+C:\Users\JANINDU MALEESHA\Desktop\Event\EventManagementApi\obj\Debug\netcoreapp3.1\SalesManagementAPI.csproj.AssemblyReference.cache

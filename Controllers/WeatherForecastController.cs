@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using SalesManagementAPI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,10 +12,6 @@ namespace SalesManagementApp.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
 
         private readonly ILogger<WeatherForecastController> _logger;
 
@@ -27,16 +24,30 @@ namespace SalesManagementApp.Controllers
         //hi jani
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public List<Partner> Get()
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            salesDbContext dbContext = new salesDbContext();
+            return dbContext.Partner.ToList();
+        }
+
+        [HttpPost]
+        public Partner Post(Partner _partner)
+        {
+            salesDbContext dbContext = new salesDbContext();
+            if (_partner.Id == Guid.Empty)
             {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+                _partner.Id = Guid.NewGuid();
+                dbContext.Partner.Add(_partner);
+                dbContext.SaveChanges();
+                return _partner;
+            }
+            else
+            {
+                dbContext.Partner.Update(_partner);
+                dbContext.SaveChanges();
+                return _partner;
+            }
+            
         }
     }
 }
