@@ -20,15 +20,13 @@ namespace SalesManagementApp.Controllers
             _logger = logger;
         }
 
-        //hi thara
-        //hi jani
-
         [HttpGet]
         public List<Partner> Get()
         {
             salesDbContext dbContext = new salesDbContext();
             return dbContext.Partner.ToList();
         }
+
 
         [HttpPost]
         public Partner Post(Partner _partner)
