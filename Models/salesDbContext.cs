@@ -13,6 +13,7 @@ namespace SalesManagementAPI.Models
         public salesDbContext(DbContextOptions<salesDbContext> options)
             : base(options)
         {
+          
         }
 
         public virtual DbSet<Customer> Customer { get; set; }
@@ -20,6 +21,7 @@ namespace SalesManagementAPI.Models
         public virtual DbSet<Partner> Partner { get; set; }
         public virtual DbSet<Ticket> Ticket { get; set; }
         public virtual DbSet<TicketCustomer> TicketCustomer { get; set; }
+        public virtual DbSet<User> User { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -161,6 +163,24 @@ namespace SalesManagementAPI.Models
                     .HasForeignKey(d => d.TicketId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_ticketCustomer_ticket");
+            });
+
+            modelBuilder.Entity<User>(entity =>
+            {
+                entity.ToTable("user");
+
+                entity.Property(e => e.Id).ValueGeneratedNever();
+
+                entity.Property(e => e.Password)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsFixedLength();
+
+                entity.HasOne(d => d.Partner)
+                    .WithMany(p => p.User)
+                    .HasForeignKey(d => d.PartnerId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_user_partner");
             });
 
             OnModelCreatingPartial(modelBuilder);

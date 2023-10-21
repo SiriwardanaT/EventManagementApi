@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SalesManagementAPI.AuthModal;
 using SalesManagementAPI.Models;
 using System;
 using System.Collections.Generic;
@@ -20,10 +21,30 @@ namespace SalesManagementAPI.Controllers
 
 
         [HttpPost]
-        public Partner Post(Partner _partner)
+        public Auth Post(Auth auth)
         {
-            return null;
+            salesDbContext dbContext = new salesDbContext();
+            Partner partner = dbContext.Partner.FirstOrDefault(pa => pa.Phone == auth.Phone);
 
+            if (partner != null && partner.Id != null)
+            {
+                User user = dbContext.User.FirstOrDefault(use => use.Password == auth.Password && use.PartnerId == partner.Id);
+                if (user != null && user.Id != Guid.Empty)
+                {
+                    auth.FirstName = partner.FirstName;
+                    auth.UserType = user.UserType;
+                    auth.PartnerId = partner.Id;
+                    return auth;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            else 
+            {
+                return null;
+            }
         }
     }
 }

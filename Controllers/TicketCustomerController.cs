@@ -15,12 +15,25 @@ namespace SalesManagementAPI.Controllers
         [HttpPost]
         public TicketCustomer Post(TicketCustomer _ticketCustomer)
         {
-            salesDbContext dbContext = new salesDbContext();
-            _ticketCustomer.Id = Guid.NewGuid();
-            dbContext.TicketCustomer.Add(_ticketCustomer);
-            dbContext.SaveChanges();
-            return _ticketCustomer;
 
+            salesDbContext dbContext = new salesDbContext();
+            Ticket ticket = dbContext.Ticket.FirstOrDefault(tik => tik.Id == _ticketCustomer.TicketId);
+
+            if (ticket.NoOfTicket >= _ticketCustomer.NumberOfTicket)
+            {
+                _ticketCustomer.Id = Guid.NewGuid();
+                dbContext.TicketCustomer.Add(_ticketCustomer);
+                dbContext.SaveChanges();
+
+                ticket.NoOfTicket -= _ticketCustomer.NumberOfTicket;
+                dbContext.Ticket.Update(ticket);
+                dbContext.SaveChanges();
+                return _ticketCustomer;
+            }
+            else 
+            {
+                return null;
+            }
         }
 
         [HttpGet]
@@ -28,6 +41,16 @@ namespace SalesManagementAPI.Controllers
         {
             salesDbContext dbContext = new salesDbContext();
             return dbContext.TicketCustomer.ToList();
+        }
+
+        [HttpGet("{ticket}")]
+        public List<TicketCustomer> Get(Guid ticket)
+        {
+
+            salesDbContext dbContext = new salesDbContext();
+
+            var allSles = dbContext.TicketCustomer.ToList().FindAll(e => e.TicketId == ticket);
+            return allSles;
         }
     }
 }

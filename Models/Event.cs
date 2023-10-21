@@ -17,6 +17,7 @@ namespace SalesManagementAPI.Models
         public int? Type { get; set; }
         public int? TicketCount { get; set; }
         public Guid? PartnerId { get; set; }
+
         public virtual Partner Partner { get; set; }
         public virtual ICollection<Ticket> Ticket { get; set; }
     }

@@ -8,6 +8,7 @@ namespace SalesManagementAPI.Models
         public Partner()
         {
             Event = new HashSet<Event>();
+            User = new HashSet<User>();
         }
 
         public Guid Id { get; set; }
@@ -18,5 +19,6 @@ namespace SalesManagementAPI.Models
         public string Address { get; set; }
 
         public virtual ICollection<Event> Event { get; set; }
+        public virtual ICollection<User> User { get; set; }
     }
 }
